@@ -46,3 +46,5 @@ RUN make && make install
 ADD ./nginx /etc/init.d/nginx
 
 RUN chmod +x /etc/init.d/nginx
+
+RUN apt-get remove -y curl gcc make g++
