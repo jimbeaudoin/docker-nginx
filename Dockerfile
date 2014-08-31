@@ -49,4 +49,4 @@ RUN chmod +x /etc/init.d/nginx
 
 # cleanup
 RUN apt-get remove -y curl gcc make g++
-RUN apt-get autoremove
+RUN apt-get -y autoremove
