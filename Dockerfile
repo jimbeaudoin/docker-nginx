@@ -25,7 +25,7 @@ RUN apt-get install -y curl gcc make g++ openssl libssl-dev libpcre3-dev
 
 # zlib installation
 RUN curl -O http://zlib.net/zlib-1.2.8.tar.gz
-RUN tar -xzf zlib-1.2.8.tar
+RUN tar -xzf zlib-1.2.8.tar.gz
 RUN zlib-1.2.8/configure
 RUN zlib-1.2.8/make
 RUN zlib-1.2.8/make install
