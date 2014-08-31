@@ -10,7 +10,7 @@ This is a nginx container build from source. It's always a good idea to build ng
 /usr/sbin/nginx
 
 # conf
-/usr/nginx/nginx.conf
+/etc/nginx/nginx.conf
 
 # error-log
 /var/log/nginx/error.log
@@ -23,5 +23,5 @@ This is a nginx container build from source. It's always a good idea to build ng
 
 ## Usage example
 ```sh
-sudo docker run -d --name nginx -v /home/<username>/nginx.conf:/usr/nginx/nginx.conf -v /home/<username>/wwwsrc:/wwwsrc -p 80:80 jimbeaudoin/nginx service nginx start
+sudo docker run -d --name nginx -v /home/<username>/nginx.conf:/etc/nginx/nginx.conf -v /home/<username>/wwwsrc:/wwwsrc -p 80:80 jimbeaudoin/nginx service nginx start
 ```
