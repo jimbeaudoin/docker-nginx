@@ -47,6 +47,10 @@ ADD ./nginx /etc/init.d/nginx
 
 RUN chmod +x /etc/init.d/nginx
 
+WORKDIR /
+
 # cleanup
 RUN apt-get remove -y curl gcc make g++
 RUN apt-get -y autoremove
+RUN rm -rf nginx-1.6.1
+RUN rm nginx-1.6.1.tar.gz zlib-1.2.8.tar.gz
