@@ -36,7 +36,7 @@ cd nginx-1.6.1
 make && make install
 cd ..
 rm -rf nginx-1.6.1 nginx-1.6.1.tar.gz
-cat nginx > /etc/init.d/nginx
+cat ./nginx > /etc/init.d/nginx
 
 echo "Cleaning up..."
 echo ""
