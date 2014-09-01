@@ -15,6 +15,9 @@ If you want to build from source with a Shell Script, you can use one of these f
 
 This example is going to start a new container with the port 80 expose to the host, mount the docker-nginx directory inside the container as /helpers and run a bash shell to execute the next commands by hand.
 ```sh
+# Clone the repository
+git clone https://github.com/jimbeaudoin/docker-nginx.git
+
 # Create the container
 sudo docker run -it -p 80:80 -v /home/<username>/docker-nginx:/helpers debian:7.6 /bin/bash
 
@@ -26,6 +29,9 @@ chmod +x no-sudo-install.sh
 
 Using the Dockerfile, you can easily build an image
 ```sh
+# Clone the repository
+git clone https://github.com/jimbeaudoin/docker-nginx.git
+
 # Build the image (Don't forget the dot at the end)
 cd docker-nginx
 sudo docker build -t <username>/nginx .
