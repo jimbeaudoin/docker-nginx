@@ -23,9 +23,9 @@ echo ""
 
 curl -O http://zlib.net/zlib-1.2.8.tar.gz
 tar -xzf zlib-1.2.8.tar.gz
-bash zlib-1.2.8/configure
-bash zlib-1.2.8/make
-bash zlib-1.2.8/make install
+bash $PWD/zlib-1.2.8/configure
+bash $PWD/zlib-1.2.8/make
+bash $PWD/zlib-1.2.8/make install
 rm -rf zlib-1.2.8 zlib-1.2.8.tar.gz
 
 echo ""
@@ -34,15 +34,15 @@ echo ""
 
 curl -O http://nginx.org/download/nginx-1.6.1.tar.gz
 tar -xzf nginx-1.6.1.tar.gz
-bash nginx-1.6.1/configure --user=www-data --prefix=/etc/nginx --sbin-path=/usr/sbin/nginx --conf-path=/etc/nginx/nginx.conf --pid-path=/var/run/nginx.pid --lock-path=/var/run/nginx.lock --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-http_gzip_static_module --with-http_stub_status_module --with-http_ssl_module --with-pcre --with-file-aio --with-http_realip_module --without-http_scgi_module --without-http_uwsgi_module --without-http_fastcgi_module
-bash nginx-1.6.1/make
-bash nginx-1.6.1/make install
+bash $PWD/nginx-1.6.1/configure --user=www-data --prefix=/etc/nginx --sbin-path=/usr/sbin/nginx --conf-path=/etc/nginx/nginx.conf --pid-path=/var/run/nginx.pid --lock-path=/var/run/nginx.lock --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-http_gzip_static_module --with-http_stub_status_module --with-http_ssl_module --with-pcre --with-file-aio --with-http_realip_module --without-http_scgi_module --without-http_uwsgi_module --without-http_fastcgi_module
+bash $PWD/nginx-1.6.1/make
+bash $PWD/nginx-1.6.1/make install
 rm -rf nginx-1.6.1 nginx-1.6.1.tar.gz
 
 echo ""
 echo "Copying Nginx script..."
 echo ""
-cat nginx.script > /etc/init.d/nginx
+cat $PWD/nginx.script > /etc/init.d/nginx
 
 echo ""
 echo "Cleaning up..."
