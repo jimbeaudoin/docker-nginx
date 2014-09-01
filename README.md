@@ -2,11 +2,14 @@
 
 ## nginx-1.6.1 build from source
 
-It's always a good idea to build nginx from source on your machine. You can use this Dockerfile to rebuild nginx easily on all of your machines.
+It's always a good idea to build nginx from source on your machines. You can use these files to build nginx easily on all of your machines.
 
 If you want to build from source with a Shell Script, you can use one of these files:  
 * install.sh (Install with sudo)  
 * no-sudo-install.sh (Install without sudo)
+
+If you want to build a Docker image, use this file:
+* Dockerfile
 
 ## Usage example
 
