@@ -10,7 +10,7 @@ If you want to build from source with a Shell Script, you can use one of these f
 
 ## Usage example
 
-### WARNING
+**WARNING**  
 *Don't forget to put 'daemon off;' on top of you nginx.conf if you run nginx inside the container.*
 
 This example is going to start a new container with the port 80 expose to the host, mount the docker-nginx directory inside the container as /helpers and run a bash shell to execute the next commands by hand.
