@@ -8,23 +8,6 @@ If you want to build from source with a Shell Script, you can use one of these f
 * install.sh (Install with sudo)  
 * no-sudo-install.sh (Install without sudo)
 
-
-## Directories
-```sh
-# bin
-/usr/sbin/nginx
-
-# conf
-/etc/nginx/nginx.conf
-
-# error-log
-/var/log/nginx/error.log
-
-# access-log
-/var/log/nginx/access.log
-```
-
-
 ## Usage example
 
 ### WARNING
@@ -49,4 +32,19 @@ sudo docker build -t <username>/nginx .
 
 # Start a new container based on the new image
 sudo docker run -d --name nginx -v /home/<username>/nginx.conf:/etc/nginx/nginx.conf -v /home/<username>/wwwsrc:/wwwsrc -p 80:80 <username>/nginx service nginx start
+```
+
+## Directories
+```sh
+# bin
+/usr/sbin/nginx
+
+# conf
+/etc/nginx/nginx.conf
+
+# error-log
+/var/log/nginx/error.log
+
+# access-log
+/var/log/nginx/access.log
 ```
