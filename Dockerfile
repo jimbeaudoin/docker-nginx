@@ -43,7 +43,7 @@ RUN ./configure --user=www-data --prefix=/etc/nginx --sbin-path=/usr/sbin/nginx 
 
 RUN make && make install
 
-ADD ./nginx /etc/init.d/nginx
+ADD ./nginx.script /etc/init.d/nginx
 
 RUN chmod +x /etc/init.d/nginx
 
