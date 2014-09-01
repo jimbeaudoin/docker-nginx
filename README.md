@@ -4,7 +4,7 @@
 
 It's always a good idea to build nginx from source on your machine. You can use this Dockerfile to rebuild nginx easily on all of your machines.
 
-If you want to build from source with a Shell Script, you can use one of theses files:  
+If you want to build from source with a Shell Script, you can use one of these files:  
 * install.sh (Install with sudo)  
 * no-sudo-install.sh (Install without sudo)
 
