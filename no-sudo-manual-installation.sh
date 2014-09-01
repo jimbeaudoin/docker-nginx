@@ -18,7 +18,7 @@ apt-get -y install curl gcc make g++ openssl libssl-dev libpcre3-dev
 echo "Zlib installation..."
 echo ""
 
-curl -0 http://zlib.net/zlib-1.2.8.tar.gz
+curl -O http://zlib.net/zlib-1.2.8.tar.gz
 tar -xzf zlib-1.2.8.tar.gz
 cd zlib-1.2.8
 ./configure
