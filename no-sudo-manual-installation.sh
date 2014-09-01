@@ -47,6 +47,7 @@ echo ""
 echo "Copying Nginx script..."
 echo ""
 cat $PWD/nginx.script > /etc/init.d/nginx
+chmod +x /etc/init.d/nginx
 
 echo ""
 echo "Cleaning up..."
