@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Nginx 1.6.1 Installation on Debian 7.6
+# Nginx 1.6.2 Installation on Debian 7.6
 
 # (c) Jimmy Beaudoin, 2014
 
